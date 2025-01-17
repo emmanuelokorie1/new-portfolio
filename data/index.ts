@@ -1,10 +1,12 @@
 export const name = "Okorie Emmanuel";
+export const email = "okorieemmanuel167@gmail.com";
+export const linkedin = "www.linkedin.com/in/okorie-emmanuel";
 
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
+    // { name: "Contact", link: "#contact" },
   ];
   
   export const gridItems = [

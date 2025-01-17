@@ -3,7 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
-import { name } from "@/data";
+import { email, linkedin, name } from "@/data";
 
 function Hero() {
   return (
@@ -37,17 +37,30 @@ function Hero() {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, i'm {name}, a Web and Mobile frontend developer based in
-            Lagos, Nigeria.
+            Hi, i'm {name}, a Web and Mobile frontend developer based in Lagos,
+            Nigeria.
           </p>
 
-          <a>
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex items-center gap-[1rem] justify-center mt-[3rem]">
+            <div>
+              <a href={`mailto:${email}`} className="p-[3px] relative">
+                <div className="absolute inset-0 bg-[#161a31] rounded-lg" />
+                <div className="px-8 py-3  bg-white rounded-[6px]  relative group transition duration-200 hover:text-white-100 text-[#161a31] font-bold hover:bg-transparent">
+                  Contact Me
+                </div>
+              </a>
+            </div>
+
+            <div>
+              <a href={`http://${linkedin}`}  target="_blank" rel="noopener noreferrer">
+                <MagicButton
+                  title="Connect Via LinkedIn"
+                  // icon={<FaLocationArrow />}
+                  // position="right"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

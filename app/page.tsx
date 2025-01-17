@@ -1,11 +1,12 @@
+import Approach from "@/components/Approach";
 import Client from "@/components/Client";
+import Experince from "@/components/Experince";
+import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
-import Image from "next/image";
-import { FaHome } from "react-icons/fa";
 // "dev": "next dev --turbopack",
 
 export default function Home() {
@@ -19,6 +20,9 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <Client />
+        <Experince />
+        <Approach />
+        <Footer />
       </div>
     </main>
   );
