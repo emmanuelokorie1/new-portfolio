@@ -6,7 +6,7 @@ import { email, socialMedia } from "@/data";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
+    <footer className="w-full pt-20 pb-10 max-w-7xl mx-auto sm:px-10 px-5" id="contact">
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img

@@ -4,7 +4,7 @@ import { testimonials } from "@/data";
 
 function Client() {
   return (
-    <div className="">
+    <div className="" id="testimonials">
       <h1 className="heading">
         Kind words from <span className="text-purple">satistfied clients</span>
       </h1>

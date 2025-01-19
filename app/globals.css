@@ -82,6 +82,12 @@
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
   }
+  .cont {
+    @apply max-w-[1440px] mx-auto;
+  }
+  .px1 {
+    @apply md:px-[3rem] sm:px-[1rem];
+  }
 
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);

@@ -24,7 +24,7 @@ function Hero() {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex justify-center relative s500:mt-20 mt-5 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="tracking-widest uppercase text-xs text-center text-blue-100 max-w-80 md:max-w-full ">
             {" "}
@@ -41,11 +41,11 @@ function Hero() {
             Nigeria.
           </p>
 
-          <div className="flex items-center gap-[1rem] justify-center mt-[3rem]">
+          <div className="s500:flex items-center gap-[1rem] justify-center s500:mt-[3rem] mt-[2rem]">
             <div>
               <a href={`mailto:${email}`} className="p-[3px] relative">
-                <div className="absolute inset-0 bg-[#161a31] rounded-lg" />
-                <div className="px-8 py-3  bg-white rounded-[6px]  relative group transition duration-200 hover:text-white-100 text-[#161a31] font-bold hover:bg-transparent">
+                {/* <div className="absolute inset-0 bg-[#161a31] rounded-lg" /> */}
+                <div className="px-8 py-3 text-center bg-white rounded-[6px]  relative group transition duration-200 hover:text-white-100 text-[#161a31] font-bold hover:bg-transparent">
                   Contact Me
                 </div>
               </a>

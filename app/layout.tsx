@@ -4,6 +4,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { useEffect, useState } from "react";
+import { FloatingNav } from "@/components/ui/FloatingNav";
+import { navItems } from "@/data";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,8 +39,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable}  bg-black-100 antialiased`}
       >
+        <FloatingNav navItems={navItems} />
         <div>
           {hydrated ? (
             <ThemeProvider
@@ -52,6 +56,8 @@ export default function RootLayout({
             children // Render children without theme provider during SSR
           )}
         </div>
+
+        <Footer />
       </body>
     </html>
   );

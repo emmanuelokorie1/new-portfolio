@@ -18,14 +18,23 @@ const config = {
   ],
   prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
+    extend: {
+      container: {
+        center: true,
+        padding: "2rem",
+      },
       screens: {
+        s400: "400px",
+        s500: "500px",
+        s600: "600px",
+        s700: "700px",
+        s800: "800px",
+        s900: "900px",
+        s1000: "1000px",
+        s1100: "1100px",
+        s1200: "1200px",
         "2xl": "1400px",
       },
-    },
-    extend: {
       colors: {
         black: {
           DEFAULT: "#000",
